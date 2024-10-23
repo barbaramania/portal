@@ -25,7 +25,9 @@ h1 {
 }
 
 h1.page-header{
-
+    font-family: 'Sora', sans-serif;
+    font-weight: normal;
+    font-style: normal;
 }
 
 main.wrapper {
