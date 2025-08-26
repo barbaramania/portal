@@ -180,7 +180,7 @@ html {
     }
     
     .contact {
-    background: #f9fafb;
+        background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(16, 185, 129, 0.1) 100%);
 }
     
     .project-card {
@@ -205,8 +205,8 @@ html {
 }
 
 .hero {
-    background: #ffffff; /* Fallback */
-    background: #ffffff;
+    background: #f8fafc; /* Fallback */
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
 }
 
 /* ===================================

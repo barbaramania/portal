@@ -721,7 +721,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--primary-500), var(--primary-600));
+  background: linear-gradient(90deg, var(--primary-500), var(--secondary-500));
   transform: scaleX(0);
   transition: var(--transition-normal);
   z-index: 1;
