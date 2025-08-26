@@ -94,7 +94,7 @@ body {
   font-weight: var(--font-normal);
   line-height: var(--leading-relaxed);
   color: var(--text-primary);
-  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+  background: #ffffff;
 }
 
 /* Heading Styles */
