@@ -2,85 +2,513 @@
 <html lang="en">
 
 <head>
-    <title>Varvara Maslouskaya</title>
+    <title>Varvara Maslouskaya | IT Professional Portfolio</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Varvara Maslouskaya, IT student and aspiring software developer">
+    <meta name="keywords" content="IT portfolio, software development, web development, JavaScript, Python">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Files -->
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/forms.css">
 </head>
 
 <body>
+    <!-- Header & Navigation -->
     <header>
-        <h1 class="page-header">Varvara Maslouskaya</h1>
-        <nav class="topnav" id="myTopnav">
-            <a href="index.html" class="active">Home</a>
-            <a href="https://barbaramania.github.io/html-elements" target="_blank">HTML Elements</a>
-            <a href="https://barbaramania.github.io/styling-with-css" target="_blank">SCC Project</a>
-            <a href="https://barbaramania.github.io/selectors/" target="_blank">SCC Selectors</a>
-            <a href="https://barbaramania.github.io/css-positioning/" target="_blank">SCC Positioning</a>
-            <a href="https://barbaramania.github.io/time-of-day/" target="_blank">JS Timing</a>
-            <a href="https://barbaramania.github.io/daily-grind/" target="_blank">JS Daily-coffee</a>
-            <a href="https://barbaramania.github.io/creatures/" target="_blank">JS Creatures Fun</a>
-            <a href="https://barbaramania.github.io/form-processing/" target="_blank">JS Forms</a>
-            <a href="https://barbaramania.github.io/dom-play/" target="_blank">DOM-play</a>
-            <a href="https://barbaramania.github.io/seasonal-styles/" target="_blank">JS 4 Seasons</a>
-            <a href="https://github.com/barbaramania" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/varvar-m" target="_blank">LinkedIn</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        </nav>
+        <div class="container nav-container">
+            <a href="#" class="logo">Varvara</a>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="resources/resume.pdf" target="_blank">Resume</a></li>
+            </ul>
+        </div>
     </header>
 
-    <main class="wrapper">
-        <picture class="profile">
-            <source media="(min-width: 1200px)" srcset="images/desktop.jpg">
-            <source media="(min-width: 501px)" srcset="images/tablet.jpg">
-            <img src="images/phone.jpg" alt="That's me!">
-        </picture>
-        <h2 class="subheader">About Me</h2>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <h1>IT Professional & DevOps Engineer</h1>
+            <p>Experienced in infrastructure security, automation, and cloud technologies. Passionate about creating efficient, secure solutions that drive operational excellence.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+        </div>
+    </section>
 
-        <p>Hey there! </p>
-        <p>I'm an IT student who loves diving into new <strong>challenges</strong> and <strong>solving problems</strong>. I thrive in fast-paced environments where collaboration and empathy are key.</p>
-        <p>With hands-on experience from both my <i>studies and internships</i>, I’m all about making a positive impact within my team.</p>
-        <p>I enjoy working on projects that push my boundaries and allow me to explore new technologies. Whether it’s coding in Python or working on web development, I’m always eager to learn and grow. I also love mentoring fellow interns, helping them sharpen
-            their skills and navigate the learning curve.bus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus ipsum odio, lacinia congue varius in, iaculis eget felis. Proin facilisis dui nec purus viverra, sed tempus risus sollicitudin.</p>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Hello! I'm Varvara Maslouskaya</h3>
+                    <p>I'm an IT professional with a strong foundation in software development, infrastructure security, and DevOps practices. Currently pursuing advanced studies in Application Development, I bring hands-on experience from internships at major tech companies and a proven track record of delivering impactful solutions.</p>
+                    <p>My expertise spans across multiple domains including cloud infrastructure, security automation, and full-stack development. I'm passionate about creating innovative solutions that improve operational efficiency and security posture.</p>
+                    <p>I thrive in collaborative environments where I can leverage my technical skills and soft skills to drive projects forward and mentor team members.</p>
+                    
+                    <div class="skills">
+                        <h4>Technical Skills</h4>
+                        <div class="skill-categories">
+                            <div class="skill-category">
+                                <h5>Programming & Development</h5>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">GoLang</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">FastAPI</span>
+                                <span class="skill-tag">HTML/CSS</span>
+                            </div>
+                            <div class="skill-category">
+                                <h5>Infrastructure & DevOps</h5>
+                                <span class="skill-tag">Docker</span>
+                                <span class="skill-tag">Kubernetes</span>
+                                <span class="skill-tag">Terraform</span>
+                                <span class="skill-tag">AWS</span>
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">CI/CD</span>
+                                <span class="skill-tag">GitHub Actions</span>
+                            </div>
+                            <div class="skill-category">
+                                <h5>Security & Observability</h5>
+                                <span class="skill-tag">DevSecOps</span>
+                                <span class="skill-tag">Container Security</span>
+                                <span class="skill-tag">SSH Hardening</span>
+                                <span class="skill-tag">Threat Modeling</span>
+                                <span class="skill-tag">BigQuery</span>
+                                <span class="skill-tag">Log Analysis</span>
+                            </div>
+                            <div class="skill-category">
+                                <h5>Soft Skills</h5>
+                                <span class="skill-tag">Problem Solving</span>
+                                <span class="skill-tag">Communication</span>
+                                <span class="skill-tag">Project Management</span>
+                                <span class="skill-tag">Documentation</span>
+                                <span class="skill-tag">Cross-functional Collaboration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/desktop.jpg" alt="Varvara Maslouskaya">
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <h3>Why me</h3>
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Where I've Worked</h2>
+            </div>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>Infrastructure Security Intern</h3>
+                        <div class="experience-company">
+                            <span class="company-name">Reddit</span>
+                            <span class="company-location">Seattle, USA</span>
+                        </div>
+                        <div class="experience-period">Apr. 2025 - Aug. 2025</div>
+                    </div>
+                    <div class="experience-achievements">
+                        <ul>
+                            <li>Built automation tools that made our infrastructure team's life much easier - we reduced repetitive tasks by almost half</li>
+                            <li>Set up a smart logging system that connected all our security tools, making it way faster to spot and respond to issues</li>
+                            <li>Made our Docker containers more secure by setting up proper access controls and monitoring</li>
+                            <li>Helped three different teams deploy their code more smoothly by fixing their CI/CD pipelines</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>Junior Product Manager</h3>
+                        <div class="experience-company">
+                            <span class="company-name">PR3 Marketing Service</span>
+                            <span class="company-location">Minsk, Belarus</span>
+                        </div>
+                        <div class="experience-period">Oct. 2022 - Jun. 2023</div>
+                    </div>
+                    <div class="experience-achievements">
+                        <ul>
+                            <li>Managed projects for clients from different countries, working across multiple time zones and languages</li>
+                            <li>Organized our internal documentation system to keep track of everything - requirements, bugs, and testing plans</li>
+                            <li>Ran weekly demos to show off new features and helped roll out updates smoothly</li>
+                            <li>Led a distributed team and managed to speed up our project delivery significantly</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <p>My passion for software development drives me to create innovative solutions, and I'm excited about the opportunity to bring my skills to a real-world setting. I’m particularly interested in roles that allow me to work on impactful projects and
-            collaborate with others who share my enthusiasm for technology. Let’s connect! </p>
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Education Journey</h2>
+            </div>
+            <div class="education-grid">
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Application Development Certificate</h3>
+                        <p class="education-institution">Year Up United / Seattle Central College</p>
+                        <p class="education-period">Sept. 2024 - Sept. 2025</p>
+                        <p class="education-description">54 credits focused on DevOps, cloud platforms, software engineering, and career readiness</p>
+                    </div>
+                </div>
+                
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Bachelor of Science in Information Technology</h3>
+                        <p class="education-institution">Belarusian State University of Informatics and Radioelectronics</p>
+                        <p class="education-period">Sept. 2019 - June 2023</p>
+                        <p class="education-description">Top 5% of graduates; coursework in Network Design, Digital Communications, and Software Development</p>
+                    </div>
+                </div>
+                
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>AWS Academy Graduate - Cloud Developing</h3>
+                        <p class="education-institution">Amazon Web Services</p>
+                        <p class="education-period">Dec. 2024</p>
+                        <p class="education-description">Cloud Development, AWS Services, Serverless Architecture</p>
+                    </div>
+                </div>
+                
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Introduction to Cybersecurity</h3>
+                        <p class="education-institution">Cisco</p>
+                        <p class="education-period">Jan. 2025</p>
+                        <p class="education-description">Cybersecurity, Cyber Defense, Threat Detection</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <p><small>&copy; 2023-<span id="this-year"></span> by 
-        Varvara Maslouskaya, All Rights Reserved ~ 
-          <a id="html-checker" href="#" target="_blank">Check HTML</a> ~ 
-          <a id="css-checker" href="#" target="_blank">Check CSS</a></small>
-        </p>
-        </footer>
-    </main>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://placehold.co/600x400/2563eb/ffffff?text=API+Web+Service" alt="API Web Service">
+                    </div>
+                    <div class="project-info">
+                        <h3>Bond API Web Service</h3>
+                        <p>A web service that provides information about James Bond movies using a RESTful API architecture.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">API</span>
+                            <span class="project-tag">REST</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://barbaramania.github.io/bond-api-client/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/barbaramania" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://placehold.co/600x400/059669/ffffff?text=AJAX+Quotes" alt="AJAX Quotes">
+                    </div>
+                    <div class="project-info">
+                        <h3>AJAX Quotes Generator</h3>
+                        <p>An inspirational quote generator that uses AJAX to fetch and display quotes without page refresh.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">AJAX</span>
+                            <span class="project-tag">PHP</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://barbaramania.github.io/php-ajax-codespace/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/barbaramania" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://placehold.co/600x400/7c3aed/ffffff?text=Seasonal+Styles" alt="Seasonal Styles">
+                    </div>
+                    <div class="project-info">
+                        <h3>Seasonal Styles</h3>
+                        <p>A website that dynamically changes its theme based on the current season using JavaScript.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">DOM</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://barbaramania.github.io/seasonal-styles/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/barbaramania" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="https://github.com/barbaramania" target="_blank" class="btn">View All Projects</a>
+            </div>
+        </div>
+    </section>
 
-    <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm currently pursuing advanced studies in Application Development and open to new opportunities in infrastructure security, DevOps, and cloud engineering. Feel free to reach out if you'd like to collaborate or discuss potential roles!</p>
+                    
+                    <ul class="contact-details">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>varvaramaslouskayar@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Seattle, WA</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-file-alt"></i>
+                            <a href="resources/resume.pdf" target="_blank">View My Resume</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/barbaramania" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/varvara-maslouskaya/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" class="form-textarea" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Varvara Maslouskaya</h3>
+                    <p>IT professional specializing in infrastructure security, DevOps, and cloud technologies. Passionate about creating efficient, secure solutions.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/barbaramania" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/varvar-m" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Varvara Maslouskaya. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Resume Interest Modal -->
+    <div id="resumeModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>🎉 Oh, you're actually interested!</h3>
+                <button class="modal-close" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>That's fantastic! You've seen my experience and skills, and you're ready to talk. I'd love to connect with you!</p>
+                
+                <div class="contact-options">
+                    <div class="contact-option">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-details">
+                            <h4>Email me directly</h4>
+                            <p>varvaramaslouskayar@gmail.com</p>
+                            <a href="mailto:varvaramaslouskayar@gmail.com" class="btn btn-primary">Send Email</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-option">
+                        <i class="fas fa-linkedin"></i>
+                        <div class="contact-details">
+                            <h4>Connect on LinkedIn</h4>
+                            <p>Let's build our professional network</p>
+                            <a href="https://www.linkedin.com/in/varvar-m" target="_blank" class="btn btn-outline">Connect on LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal-footer">
+                    <p><strong>I'm currently open to:</strong></p>
+                    <ul>
+                        <li>Infrastructure Security roles</li>
+                        <li>DevOps Engineering positions</li>
+                        <li>Cloud Engineering opportunities</li>
+                        <li>Interesting project collaborations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
-        //https://tinyurl.com/dynamic-html-css-checkers
-        document.getElementById("html-checker").setAttribute("href", "https://validator.w3.org/nu/?doc=" + location.href);
-
-        document.getElementById("css-checker").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-
-        //set current year in span with id of this-year
-        let d = new Date();
-        let thisYear = d.getFullYear();
-        document.getElementById("this-year").innerHTML = thisYear;
-
-        //manages mobile nav 
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
+        // Mobile Navigation
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            hamburger.innerHTML = navMenu.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Close mobile menu when clicking on links
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+        
+        // Form validation
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Simple validation
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+                
+                if (name && email && message) {
+                    alert('Thanks for your message! I\'ll get back to you soon.');
+                    contactForm.reset();
+                } else {
+                    alert('Please fill in all fields.');
+                }
+            });
         }
+        
+        // Resume Modal Functionality
+        const resumeModal = document.getElementById('resumeModal');
+        const closeModal = document.getElementById('closeModal');
+        
+        // Function to open modal
+        function openResumeModal() {
+            resumeModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        // Function to close modal
+        function closeResumeModal() {
+            resumeModal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Event listeners for resume links
+        document.querySelectorAll('a[href="resources/resume.pdf"]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                openResumeModal();
+            });
+        });
+        
+        // Close modal when clicking close button
+        closeModal.addEventListener('click', closeResumeModal);
+        
+        // Close modal when clicking outside
+        resumeModal.addEventListener('click', function(e) {
+            if (e.target === resumeModal) {
+                closeResumeModal();
+            }
+        });
+        
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && resumeModal.classList.contains('active')) {
+                closeResumeModal();
+            }
+        });
+        
+        // Current year for copyright
+        document.addEventListener('DOMContentLoaded', function() {
+            const yearElement = document.querySelector('.footer-bottom p');
+            if (yearElement) {
+                const currentYear = new Date().getFullYear();
+                yearElement.innerHTML = yearElement.innerHTML.replace('2023', `2023-${currentYear}`);
+            }
+        });
     </script>
-
 </body>
 
 </html>
